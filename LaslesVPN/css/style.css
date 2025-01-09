@@ -16,9 +16,93 @@ img {
     display: block;
 }
 
+/* VARIABLES */
+:root {
+    --BRAND-COLOR: #f43a3a;
+    --LINK-COLOR: #4F5665;
+}
+
+/* GENERAL STYLES */
+a {
+    text-decoration: none;
+}
+
+a:any-link {
+    color: var(--LINK-COLOR);
+}
+
+a:hover, a:focus-visible {
+    color: var(--BRAND-COLOR);
+}
+
+a:active {
+    color: var(--BRAND-COLOR);
+}
+
+button {
+    cursor: pointer;
+}
+
 /* HEADER */
 .header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: clamp(1rem, 2rem, 2rem) clamp(1rem, 10vw, 5rem);
+}
+
+.header__ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul li a {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.logo, .signin {
+    display: flex;
+    flex: 1;
+ }
+
+ .signin {
+    justify-content: flex-end;
+ }
+ 
+
+.signin-btn {
+    font-weight: 500;
+    border: none;
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 10rem;
+}
+
+.signup-btn {
+    font-weight: 500;
+    color: var(--BRAND-COLOR);
+    background-color: #ffffff;
+    border: 0.1rem solid var(--BRAND-COLOR);
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+.signin-btn:hover {
+    color: var(--BRAND-COLOR);
+}
+
+.signup-btn:hover {
+    color: #ffffff;
+    background-color: var(--BRAND-COLOR);
 }
