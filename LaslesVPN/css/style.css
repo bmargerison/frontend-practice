@@ -21,19 +21,22 @@ img {
     height: auto;
 }
 
-body {
-    margin: clamp(1rem, 2rem, 2rem) clamp(1rem, 10vw, 5rem);
-}
-
 /* VARIABLES */
 :root {
     --BRAND-COLOR: #f43a3a;
     --LINK-COLOR: #4F5665;
     --FONT-COLOR-MAIN: #0B132A;
     --FONT-COLOR-SECONDARY: #4F5665;
+    --BORDER: 0.2rem solid rgba(31, 31, 31, 0.123);
 }
 
 /* GENERAL STYLES */
+body {
+    
+    margin:    0 auto;
+    max-width: 150rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -54,16 +57,67 @@ button {
     cursor: pointer;
 }
 
+span {
+    font-weight: 700;
+}
+
+section {
+    margin-top: 6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--FONT-COLOR-MAIN);
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--FONT-COLOR-SECONDARY);
+}
+
+@media screen and (max-width: 1200px) {
+    .section {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+/* STATES */
+.button--state-small {
+    font-weight: 500;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.button--state-large {
+    width: 25rem;
+    height: 7rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 2rem;
+}
+
 /* HEADER */
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-between; */
+    margin: clamp(1rem, 2rem, 2rem) 0;
 }
 
 .header__ul {
-    list-style-type: none;
     display: flex;
     justify-content: flex-start;
     gap: 2rem;
@@ -74,12 +128,13 @@ button {
     justify-content: center;
 }
 
-ul li a {
+.header__ul li a {
     font-size: 1.6rem;
     font-weight: 400;
 }
 
-.header__logo, .header__signin {
+.header__logo,
+.header__signin {
     display: flex;
     flex: 1;
  }
@@ -90,21 +145,14 @@ ul li a {
  
 
 .header__signin-btn {
-    font-weight: 500;
     border: none;
     background-color: #ffffff;
-    padding: 1rem;
-    width: 10rem;
 }
 
 .header__signup-btn {
-    font-weight: 500;
     color: var(--BRAND-COLOR);
     background-color: #ffffff;
     border: 0.1rem solid var(--BRAND-COLOR);
-    padding: 1rem;
-    border-radius: 2rem;
-    width: 10rem;
     margin-left: 1rem;
 }
 
@@ -121,11 +169,10 @@ ul li a {
 .hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: 5rem;
+    justify-content: space-evenly;
 }
 
-.hero__person1 img {
+.hero__image img {
     width: 50vw;
     max-width: 80rem;
     min-width: 30rem;
@@ -150,18 +197,11 @@ ul li a {
 .hero__intro {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
 }
-
 
 .hero__get-started-btn {
     background-color: var(--BRAND-COLOR);
     color: white;
-    width: 25rem;
-    height: 7rem;
-    font-size: 1.6rem;
-    font-weight: 700;
-    border-radius: 2rem;
     border: none;
 }
 
@@ -169,10 +209,6 @@ ul li a {
     border: var(--BRAND-COLOR) solid 0.2rem;
     background: white;
     color: var(--BRAND-COLOR);
-}
-
-.hero span {
-    font-weight: 700;
 }
 
 @media screen and (max-width: 1200px) {
@@ -187,29 +223,21 @@ ul li a {
         justify-content: center;
     }
 
-    .hero__person1 img {
+    .hero__image img {
         width: 80vw;
         max-width: 50rem;
     }
 
     .hero__get-started-btn {
         justify-content: center;
+        margin-top: 2rem;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .hero__intro h1 {
-        font-size: 4rem;
-    }
-    
-    .hero__intro p {
-        font-size: 1.2rem;
-    }
-    
     .hero__get-started-btn {
         width: 18rem;
         height: 5rem;
-        font-size: 1.2rem;
         border-radius: 1.4rem;
     }
 }
@@ -217,9 +245,6 @@ ul li a {
 /* BRAND PROMOTION */
 .brand-promotion {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 10rem;
 }
 
 .brand-promotion__section {
@@ -237,28 +262,23 @@ ul li a {
     height: 10rem;
 }
 
-.brand-promotion__text h2 {
-    font-size: 2rem;
-    color: var(--FONT-COLOR-MAIN);
-}
-
-.brand-promotion__text h3 {
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: var(--FONT-COLOR-SECONDARY);
-}
-
-
 .brand-promotion__img,
 .brand-promotion__text {
     padding: 1rem;
 }
 
 .brand-promotion__img img {
-    width: 8rem;
+    width: 6rem;
 }
 
 .brand-promotion__section + .brand-promotion__section {
-    border-left: 10px solid black;
-
+    border-left: var(--BORDER);
 }
+
+
+@media screen and (max-width: 576px) {
+    .brand-promotion__img img {
+        width: 4rem;
+    }
+}
+
