@@ -26,6 +26,38 @@ body {
     font-family: 'DM sans', sans-serif;
 }
 
+/* HEADER */
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-top: 5rem;
+}
+
+.header ul li {
+    list-style-type: none;
+    font-size: 1.8rem;
+    padding: 1rem 4rem;
+    transition: transform .3s ease-out;
+}
+
+.header ul li a,
+.header ul li i {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+.header ul li a:hover,
+.header ul li i:hover {
+    color: #a5a5a5;
+    text-shadow: 1px 1px 5px rgb(66, 66, 66);
+    transform: scale(1.1);
+}
+
 /* HERO */
 .hero {
     background: linear-gradient(#fff, #FFC6C6, #BA9FE7, #9CECFF);
@@ -37,10 +69,11 @@ body {
     position: relative; 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .hero__carousel {
+    flex: 0 1 auto;
     display: flex;
     align-items: center;
     overflow: scroll;
@@ -51,6 +84,7 @@ body {
 
 .hero__wrapper {
     position: relative;
+    padding: 5rem 0;
 }
 
 .hero--blend {
@@ -196,3 +230,6 @@ body {
     color: #482BE7;
 }
 
+.header__spacer {
+    flex: 1;
+}
