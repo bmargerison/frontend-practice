@@ -36,3 +36,4 @@ radioBtns.forEach(btn => {
         carousel.scrollLeft = cardWidth * (btn.id.slice(-1) - 1);
     });
 })
+

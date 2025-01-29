@@ -7,6 +7,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 html {
@@ -44,6 +46,7 @@ body {
     overflow: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    margin-bottom: 2rem;
 }
 
 .hero__wrapper {
@@ -104,11 +107,9 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 3rem;
 }
 
 .hero__buttons form {
-    margin-bottom: 3rem;
     display: grid;
     grid-auto-flow: column; 
     gap: 1rem;
@@ -174,3 +175,24 @@ body {
 .hero__buttons input:checked::before {
     transform: scale(1);
 }
+
+.hero__buttons button {
+    cursor: pointer;
+    color: #fff;
+    background: #482BE7;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: none;
+    width: 18rem;
+    height: 5rem;
+    margin-top: 6rem;
+    transition: border .1s ease-in;
+    box-sizing: border-box;
+}
+
+.hero__buttons button:hover {
+    background: #fff;
+    border: 0.2rem solid #482BE7;
+    color: #482BE7;
+}
+
