@@ -27,12 +27,18 @@ body {
 }
 
 /* HEADER */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .header ul {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex: 1;
-    padding-top: 5rem;
+    padding-top: 1rem;
 }
 
 .header ul li {
@@ -93,7 +99,6 @@ body {
 
 .hero__card {
     min-width: 100vw;
-    position: relative;
 }
 
 .hero__card:first-child {
