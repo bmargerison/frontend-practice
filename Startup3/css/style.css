@@ -26,6 +26,12 @@ body {
     font-family: 'DM sans', sans-serif;
 }
 
+ /* STATES */
+.image--blend {
+    background-blend-mode: multiply;
+}
+
+
 /* HEADER */
 .header {
     display: flex;
@@ -69,7 +75,7 @@ body {
     background: linear-gradient(#fff, #FFC6C6, #BA9FE7, #9CECFF);
     background-color: #2f189380;
     min-height: 100vh;
-    background-image: url('../img/Image.png');
+    background-image: url('../img/hero.png');
     background-size: cover;
     background-position: center right;
     position: relative; 
@@ -80,25 +86,20 @@ body {
 
 .hero__carousel {
     flex: 0 1 auto;
-    display: flex;
-    align-items: center;
-    overflow: scroll;
+    display: grid;
+    grid-template-areas: "a a a a a";
+    grid-area: a;
+    grid-auto-columns: 100%;
     scroll-behavior: smooth;
-    scrollbar-width: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; 
     margin-bottom: 2rem;
 }
 
 .hero__wrapper {
     position: relative;
     padding: 5rem 0;
-}
-
-.hero--blend {
-    background-blend-mode: multiply;
-}
-
-.hero__card {
-    min-width: 100vw;
 }
 
 .hero__card:first-child {
