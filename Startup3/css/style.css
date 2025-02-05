@@ -24,6 +24,9 @@ img {
 /* VARIABLES */
 :root {
     --SECTION-PADDING: 10rem 0;
+    --BRAND-PURPLE: #482BE7;
+    --BRAND-DARK-PURPLE: #2f189380;
+    --BACKGROUND-BLUE: #090764b4;
 }
 
 /* GENERAL STYLES */
@@ -81,7 +84,7 @@ a, i {
 
 form input[type=radio] {
     appearance: none;
-    font: inherit;
+    font-family: inherit;
     color: #fff;
     width: 1.2rem;
     height: 1.2rem;
@@ -110,11 +113,56 @@ form input[type=radio]:checked::before {
     transform: scale(1);
 }
 
+button {
+    cursor: pointer;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: none;
+    height: 5rem;
+    transition: border .1s ease-in;
+    box-sizing: border-box;
+    font: inherit;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
  /* STATES */
 .image--blend {
     background-blend-mode: multiply;
 }
 
+.btn--purple {
+    background: var(--BRAND-PURPLE);
+    width: 18rem; 
+    margin-top: 6rem;
+}
+
+.btn--purple:hover{
+    background: #fff;
+    border: 0.2rem solid var(--BRAND-PURPLE);
+    color: var(--BRAND-PURPLE);
+}
+
+.btn--green {
+    background: #25DAC5;
+}
+
+.btn--green:hover {
+    color: #25DAC5;
+    border: 0.2rem solid #25DAC5;
+    background: #fff;
+}
+
+.btn--blue {
+    background: #1DA1F2;
+}
+
+.btn--blue:hover {
+    color: #1DA1F2;
+    border: 0.2rem solid #1DA1F2;
+    background: #fff;
+}
 
 /* HEADER */
 .header {
@@ -147,7 +195,7 @@ form input[type=radio]:checked::before {
 
 /* HERO */
 .hero {
-    background-color: #2f189380;
+    background-color: var(--BRAND-DARK-PURPLE);
     min-height: 100vh;
     background-image: url('../img/hero.png');
     background-size: cover;
@@ -237,33 +285,13 @@ form input[type=radio]:checked::before {
     transform: scale(1);
 }
 
-.hero__buttons button {
-    cursor: pointer;
-    color: #fff;
-    background: #482BE7;
-    padding: 1rem;
-    border-radius: 3rem;
-    border: none;
-    width: 18rem;
-    height: 5rem;
-    margin-top: 6rem;
-    transition: border .1s ease-in;
-    box-sizing: border-box;
-}
-
-.hero__buttons button:hover {
-    background: #fff;
-    border: 0.2rem solid #482BE7;
-    color: #482BE7;
-}
-
 .header__spacer {
     flex: 1;
 }
 
 /* CONTENT */
 .content {
-    background-color: #090764b4;
+    background-color: var(--BACKGROUND-BLUE);
     background-image: url('../img/content.png');
     background-size: cover;
     background-position: bottom;
@@ -277,11 +305,11 @@ form input[type=radio]:checked::before {
 /* FEATURES */
 .features {
     display: grid;
-    grid-template-columns: 33% 50% 17%;
+    grid-template-columns: 2fr 5fr 1.5fr;
     align-items: center;
     padding: var(--SECTION-PADDING);
     text-align: left;
-    background-color: #090764b4;
+    background-color: var(--BACKGROUND-BLUE);
     background-image: url('../img/Rectangle.png');
     background-size: cover;
     background-position: center;
@@ -319,4 +347,83 @@ form input[type=radio]:checked::before {
     grid-auto-flow: row; 
     gap: 1rem;
     justify-content: center;
+}
+
+/* FORM */
+.form {
+    background-color: var(--BACKGROUND-BLUE);
+    background-image: url('../img/content.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    gap: 5rem;
+    padding: var(--SECTION-PADDING);
+    justify-content: center;
+    align-items: center;
+}
+
+.form__text {
+    flex: 1 1 0;
+    margin-left: 10%;
+}
+
+.form__signup-form {
+    width: 45rem;
+    height: 52rem;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 10%;
+    display: grid;
+    grid-auto-rows: 'a a';
+    grid-template-rows: 12% 88%;
+}
+
+.form__toggle {
+    display: flex;
+    align-items: center;
+}
+
+.form__toggle h5 {
+    flex-basis: 50%;
+    color: #1e0e62;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.form__signup {
+    position: relative;
+}
+
+.form__signup::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.3rem solid #1e0e62;
+    top: 1.5rem;
+    left: 0rem;
+    z-index: 1;
+}
+
+.form__signup-form form {
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__signup-form input {
+    padding: 1.3rem 1.3rem 1.3rem 2.5rem;
+    border-radius: 30px;
+    BORDER: 0.2rem solid rgba(31, 31, 31, 0.123);
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: rgba(21, 20, 57, 0.8);
+}
+
+.form__signup-form p {
+    font-size: 1.5rem;
+    text-shadow: none;
+    color: rgba(31, 31, 31, 0.4);
+    padding: 0;
 }
