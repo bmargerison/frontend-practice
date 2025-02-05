@@ -298,7 +298,7 @@ button {
 }
 
 .content__text {
-    margin: 0 25%;
+    margin: 0 8%;
     padding: var(--SECTION-PADDING);
 }
 
@@ -363,19 +363,25 @@ button {
 }
 
 .form__text {
-    flex: 1 1 0;
+    flex: 5 5 0;
     margin-left: 10%;
+    padding: 0 5rem;
+}
+
+.form__text :where(h3, p) {
+    text-align: left;
 }
 
 .form__signup-form {
-    width: 45rem;
-    height: 52rem;
+    min-width: 45rem;
+    min-height: 52rem;
     border-radius: 10px;
     background-color: #fff;
     margin-right: 10%;
     display: grid;
     grid-auto-rows: 'a a';
     grid-template-rows: 12% 88%;
+    flex: 3 3 0;
 }
 
 .form__toggle {
@@ -426,4 +432,26 @@ button {
     text-shadow: none;
     color: rgba(31, 31, 31, 0.4);
     padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .form__text {
+        margin: 0 8%;
+        padding: 0;
+    }
+
+    .form__text :where(h3, p) {
+        text-align: center;
+    }
+
+    .form__signup-form {
+        margin: 0;
+    }
 }
