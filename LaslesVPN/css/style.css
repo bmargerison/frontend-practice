@@ -28,6 +28,12 @@ img {
     --FONT-COLOR-MAIN: #0B132A;
     --FONT-COLOR-SECONDARY: #4F5665;
     --BORDER: 0.2rem solid rgba(31, 31, 31, 0.123);
+    --ANIMATION-TIME: 0.2s ease-in-out;
+    --HAMBURGER-BAR-HEIGHT: 0.5rem;
+    --HAMBURGER-BAR-WIDTH: 4rem;
+    --HAMBURGER-BAR-GAP: 0.5rem;
+    --HAMBURGER-HEIGHT: calc(var(--HAMBURGER-BAR-HEIGHT) * 3 + var(--HAMBURGER-BAR-GAP) * 2)
+
 }
 
 /* GENERAL STYLES */
@@ -105,7 +111,6 @@ p {
     }
 }
 
-
 /* STATES */
 .button--state-small {
     font-weight: 500;
@@ -131,6 +136,10 @@ p {
     color: var(--BRAND-COLOR);
 }
 
+.figcaption--state-offscreen {
+    position: absolute;
+    left: -100000px;
+}
 
 /* HEADER */
 .header {
@@ -155,12 +164,12 @@ p {
 .header__signin {
     display: flex;
     flex: 1;
+    z-index: 5;
  }
 
  .header__signin {
     justify-content: flex-end;
  }
- 
 
 .header__signin-btn {
     border: none;
@@ -182,6 +191,7 @@ p {
     color: #ffffff;
     background-color: var(--BRAND-COLOR);
 }
+
 
 /* HERO */
 .hero {

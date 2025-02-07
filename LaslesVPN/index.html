@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lasles VPN</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
             <figure class="header__logo" >
                 <img src="./img/Logo.svg" alt="Logo" width="149" height="36.23">
-                <figcaption></figcaption>
+                <figcaption class="figcaption--state-offscreen">Company logo</figcaption>
             </figure>
+            <label class="header__hamburger-menu">
+                <input type="checkbox">
+            </label>
             <nav class="header__nav">
                 <ul class="header__ul">
                     <li class="header__li">
@@ -48,12 +52,14 @@
                 </div>
             <figure class="hero__image">
                 <img src="./img/Illustration 1.svg" alt="Person 1" width="612" height="383">
+                <figcaption class="figcaption--state-offscreen">Person image 1</figcaption>
             </figure>
         </section>
         <section class="brand-promotion">
             <div class="brand-promotion__section">
                 <figcaption class="brand-promotion__img">
                     <img src="./img/user.png" alt="User" width="55" height="56">
+                    <figcaption class="figcaption--state-offscreen">User icon</figcaption>
                 </figcaption>
                 <div class="brand-promotion__text">
                     <h2>90+</h2>
@@ -63,6 +69,7 @@
             <div class="brand-promotion__section">
                 <figcaption class="brand-promotion__img">
                     <img src="./img/location.png" alt="User" width="55" height="56">
+                    <figcaption class="figcaption--state-offscreen">Location icon</figcaption>
                 </figcaption>
                 <div class="brand-promotion__text">
                     <h2>30+</h2>
@@ -72,6 +79,7 @@
             <div class="brand-promotion__section">
                 <figcaption class="brand-promotion__img">
                     <img src="./img/Server.png" alt="User" width="55" height="56">
+                    <figcaption class="figcaption--state-offscreen">Database icon</figcaption>
                 </figcaption>
                 <div class="brand-promotion__text">
                     <h2>50+</h2>
@@ -82,6 +90,7 @@
         <section class="features">
             <figure class="features__image">
                 <img src="./img/Illustration 2.png" alt="Person 2" width="1019" height="830">
+                <figcaption class="figcaption--state-offscreen">Person image 2</figcaption>
             </figure>
             <div class="features__text">
                 <h2>We Provide Many Features You Can Use</h2>
@@ -99,6 +108,7 @@
                 <div class="products__card">
                     <figure class="products__image">
                         <img src="./img/product1.png" alt="Product 1" width="292" height="333">
+                        <figcaption class="figcaption--state-offscreen">Free product icon</figcaption>
                     </figure>
                     <h4>Free Plan</h4>
                     <ul>
@@ -119,6 +129,7 @@
                 <div class="products__card">
                     <figure class="products__image">
                         <img src="./img/product2.png" alt="Product 2" width="292" height="333">
+                        <figcaption class="figcaption--state-offscreen">Standard product icon</figcaption>
                     </figure>
                     <h4>Standard Plan</h4>
                     <ul>
@@ -142,6 +153,7 @@
                 <div class="products__card">
                     <figure class="products__image">
                         <img src="./img/product3.png" alt="Product 3" width="292" height="333">
+                        <figcaption class="figcaption--state-offscreen">Premium product icon</figcaption>
                     </figure>
                     <h4>Premium Plan</h4>
                     <ul>
@@ -166,17 +178,21 @@
             <div class="footer__brand">
                 <figure>
                     <img src="./img/Logo.svg" alt="Logo">
+                    <figcaption class="figcaption--state-offscreen">Company logo</figcaption>
                 </figure>
                 <p><span>LaslesVPN</span> is a private virtual network that has unique features and has high security.</p>
                 <div class="footer__links">
                     <figure>
                         <img src="./img/facebook.png" alt="Facebook" width="140" height="140">
+                        <figcaption class="figcaption--state-offscreen">Facebook logo</figcaption>
                     </figure>
                     <figure>
                         <img src="./img/twitter.png" alt="Twitter" width="140" height="140">
+                        <figcaption class="figcaption--state-offscreen">Twitter logo</figcaption>
                     </figure>
                     <figure>
                         <img src="./img/instagram.png" alt="Instagram" width="140" height="140">
+                        <figcaption class="figcaption--state-offscreen">Instagram logo</figcaption>
                     </figure>
                 </div>
                 <p class="footer__copyright">@2020Lasles<span>VPN</span></p>
