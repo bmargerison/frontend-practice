@@ -24,8 +24,10 @@ img {
 /* VARIABLES */
 :root {
     --SECTION-PADDING: 10rem 0;
+    --SECTION-MARGIN: 0 12%;
     --BRAND-PURPLE: #482BE7;
-    --BRAND-DARK-PURPLE: #2f189380;
+    --BRAND-DARK-PURPLE: #2f1893;
+    --BRAND-DARK-PURPLE-TRANSPARENT: #2f189380; 
     --BACKGROUND-BLUE: #090764b4;
 }
 
@@ -195,7 +197,7 @@ button {
 
 /* HERO */
 .hero {
-    background-color: var(--BRAND-DARK-PURPLE);
+    background-color: var(--BRAND-DARK-PURPLE-TRANSPARENT);
     min-height: 100vh;
     background-image: url('../img/hero.png');
     background-size: cover;
@@ -298,7 +300,7 @@ button {
 }
 
 .content__text {
-    margin: 0 8%;
+    margin: var(--SECTION-MARGIN);
     padding: var(--SECTION-PADDING);
 }
 
@@ -454,4 +456,52 @@ button {
     .form__signup-form {
         margin: 0;
     }
+}
+
+/* CLIENTS */
+.clients {
+    background-color: var(--BRAND-DARK-PURPLE);
+    padding: var(--SECTION-PADDING);
+
+}
+
+.clients h3 {
+    margin: var(--SECTION-MARGIN);
+    text-align: left;
+}
+
+.clients__feedback {
+    display: grid;
+    margin: var(--SECTION-MARGIN);
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.clients__box {
+    border: 0.2rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    gap: 3rem;
+    padding: 3rem;
+    text-align: left;
+}
+
+.clients__image {
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+}
+
+.clients__image img {
+    width: 100px;
+    height: 100px;
+}
+
+.clients__text,
+.clients__name {
+    text-align: left;
+    padding: 0;
 }
