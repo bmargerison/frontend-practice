@@ -7,7 +7,7 @@
     padding: var(--SECTION-PADDING);
     text-align: left;
     background-color: var(--BACKGROUND-BLUE);
-    background-image: url('../img/Rectangle.png');
+    background-image: url('../img/features-background.png');
     background-size: cover;
     background-position: center;
 }

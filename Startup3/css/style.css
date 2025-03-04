@@ -36,6 +36,7 @@ body {
     margin: 0 auto;
     max-width: 200rem;
     font-family: 'DM sans', sans-serif;
+    background-color: var(--BRAND-DARK-PURPLE);
 }
 
 h1 {

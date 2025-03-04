@@ -3,7 +3,7 @@
 .hero {
     background-color: var(--BRAND-DARK-PURPLE-TRANSPARENT);
     min-height: 100vh;
-    background-image: url('../img/hero.png');
+    background-image: url('../img/hero-background.png');
     background-size: cover;
     background-position: center right;
     position: relative; 

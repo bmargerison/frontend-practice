@@ -1,0 +1,43 @@
+@import url("style.css");
+
+.action {
+    background-color: var(--BACKGROUND-BLUE);
+    background-image: url('../img/action-background.png');
+    background-size: cover;
+    background-position: middle middle;
+    padding: var(--SECTION-PADDING);
+}
+
+.action__text {
+    margin: var(--SECTION-MARGIN);
+}
+
+.action__text span {
+    display: block;
+}
+
+.action__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.action__buttons .btn--green {
+    width: 15rem;
+}
+
+.action__play-btn {
+    background-color: red;
+    width: 5rem;
+}
+
+.action__play-btn:hover {
+    background-color: white;
+    border: 0.1rem solid red;
+    color: red;
+}
+
+.action__play-btn:hover i {
+    color: red;
+}
