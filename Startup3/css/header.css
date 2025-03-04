@@ -1,0 +1,29 @@
+@import url("style.css");
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    padding-top: 1rem;
+}
+
+.header ul li {
+    list-style-type: none;
+    font-size: 1.8rem;
+    padding: 1rem 4rem;
+    transition: transform .3s ease-out;
+}
+
+.header ul li a:hover,
+.header ul li i:hover {
+    color: #a5a5a5;
+    text-shadow: 1px 1px 5px rgb(66, 66, 66);
+    transform: scale(1.1);
+}

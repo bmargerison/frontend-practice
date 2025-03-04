@@ -1,0 +1,108 @@
+@import url("style.css");
+
+.form {
+    background-color: var(--BACKGROUND-BLUE);
+    background-image: url('../img/content.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    gap: 5rem;
+    padding: var(--SECTION-PADDING);
+    justify-content: center;
+    align-items: center;
+}
+
+.form__text {
+    flex: 5 5 0;
+    margin-left: 10%;
+    padding: 0 5rem;
+}
+
+.form__text :where(h3, p) {
+    text-align: left;
+}
+
+.form__signup-form {
+    min-width: 45rem;
+    min-height: 52rem;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 10%;
+    display: grid;
+    grid-auto-rows: 'a a';
+    grid-template-rows: 12% 88%;
+    flex: 3 3 0;
+}
+
+.form__toggle {
+    display: flex;
+    align-items: center;
+}
+
+.form__toggle h5 {
+    flex-basis: 50%;
+    color: #1e0e62;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.form__signup {
+    position: relative;
+}
+
+.form__signup::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.3rem solid #1e0e62;
+    top: 3rem;
+    left: 0rem;
+    z-index: 1;
+}
+
+.form__signup-form form {
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__signup-form input {
+    padding: 1.3rem 1.3rem 1.3rem 2.5rem;
+    border-radius: 30px;
+    BORDER: 0.2rem solid rgba(31, 31, 31, 0.123);
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: rgba(21, 20, 57, 0.8);
+}
+
+.form__signup-form p {
+    font-size: 1.5rem;
+    text-shadow: none;
+    color: rgba(31, 31, 31, 0.4);
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .form__text {
+        margin: 0 8%;
+        padding: 0;
+    }
+
+    .form__text :where(h3, p) {
+        text-align: center;
+    }
+
+    .form__signup-form {
+        margin: 0;
+    }
+}
+

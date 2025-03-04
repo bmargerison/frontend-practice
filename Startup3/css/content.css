@@ -1,0 +1,13 @@
+@import url("style.css");
+
+.content {
+    background-color: var(--BACKGROUND-BLUE);
+    background-image: url('../img/content.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.content__text {
+    margin: var(--SECTION-MARGIN);
+    padding: var(--SECTION-PADDING);
+}
