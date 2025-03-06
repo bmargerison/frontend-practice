@@ -1,0 +1,54 @@
+@import url("style.css");
+
+.team {
+    padding: var(--SECTION-PADDING);
+    margin: var(--SECTION-MARGIN);
+}
+
+.team h3, 
+.team h4,
+.team p {
+    text-align: left;
+}
+
+.team p {
+    margin-bottom: var(--TITLE-MARGIN);
+    padding: 0;
+}
+
+.team h3 {
+    margin-bottom: var(--TITLE-MARGIN);
+    padding: 0;
+}
+
+.team__personnel {
+    display: grid;  
+    justify-content: left;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+    row-gap: 10rem;
+    column-gap: 15rem;
+    margin-top: 5rem;
+}
+
+.team__team-member {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1 1 0;
+    width: 100%;
+}
+
+.team__team-member figure img {
+    width: 10rem;
+}
+
+.team__icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.team__icons i {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}

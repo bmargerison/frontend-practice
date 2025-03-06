@@ -17,7 +17,6 @@ html {
 
 img {
     display: block;
-    width: 100%;
     height: auto;
 }
 
@@ -29,6 +28,7 @@ img {
     --BRAND-DARK-PURPLE: #2f1893;
     --BRAND-DARK-PURPLE-TRANSPARENT: #2f189380; 
     --BACKGROUND-BLUE: #090764b4;
+    --TITLE-MARGIN: 2.5rem;
 }
 
 /* GENERAL STYLES */

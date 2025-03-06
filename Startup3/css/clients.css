@@ -7,6 +7,8 @@
 .clients h3 {
     margin: var(--SECTION-MARGIN);
     text-align: left;
+    margin-bottom: var(--TITLE-MARGIN);
+    padding: 0;
 }
 
 .clients__feedback {
