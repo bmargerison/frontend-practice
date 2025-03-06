@@ -1,0 +1,33 @@
+@import url("style.css");
+
+.showcase {
+    padding: var(--SECTION-PADDING);
+}
+
+.showcase h3 {
+    margin: var(--SECTION-MARGIN);
+    text-align: left;
+}
+
+.showcase__lastworks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 3%;
+    row-gap: 5rem;
+    margin: var(--SECTION-MARGIN);
+}
+
+.showcase__work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 48.5%;
+}
+
+.showcase__work figure img {
+    min-width: 40rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
