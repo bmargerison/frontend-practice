@@ -52,3 +52,14 @@
     font-size: 1.5rem;
     margin: 1rem 0;
 }
+
+@media screen and (max-width: 768px) {
+    .team__personnel {
+        justify-content: center;
+    }
+
+    .team__team-member {
+        align-items: center;
+    }
+    
+}
