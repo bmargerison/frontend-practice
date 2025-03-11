@@ -2,7 +2,7 @@
 
 .content {
     background-color: var(--BACKGROUND-BLUE);
-    background-image: url('../img/content.png');
+    background-image: url('../img/content-background.png');
     background-size: cover;
     background-position: bottom;
 }

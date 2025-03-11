@@ -1,0 +1,73 @@
+.contact {
+    background-color: var(--BACKGROUND-BLUE);
+    background-image: url('../img/contact-background.png');
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__wrapper {
+    margin: var(--SECTION-MARGIN);
+    display: flex;
+    gap: 5rem;
+    padding: var(--SECTION-PADDING);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact__form {
+    min-width: 45rem;
+    min-height: 52rem;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+
+}
+
+.contact__form form {
+    padding: 7rem;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: 23% 23% 23% 31%;
+    grid-template-areas: 
+        'a b'
+        'c c'
+        'd d'
+        'e f'
+    ;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+.contact__firstName {
+    grid-area: a;
+}
+
+.contact__budget {
+    grid-area: b;
+}
+
+.contact__mail {
+    grid-area: c;
+    grid-column: span 2;
+}
+
+.contact__message {
+    grid-area: d;
+    grid-column: span 2;
+}
+
+.contact__send-to-me {
+    grid-area: e;
+    align-self: end;
+}
+
+.contact__form form button {
+    grid-area: f;
+    align-self: end;
+}
