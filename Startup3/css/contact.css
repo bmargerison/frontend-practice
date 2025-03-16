@@ -12,7 +12,7 @@
 .contact__wrapper {
     margin: var(--SECTION-MARGIN);
     display: flex;
-    gap: 5rem;
+    gap: 8rem;
     padding: var(--SECTION-PADDING);
     justify-content: center;
     align-items: center;
@@ -20,8 +20,8 @@
 }
 
 .contact__form {
-    min-width: 45rem;
-    min-height: 52rem;
+    min-width: 47em;
+    min-height: 55rem;
     border-radius: 10px;
     background-color: #fff;
     position: relative;
@@ -29,19 +29,21 @@
 }
 
 .contact__form form {
-    padding: 7rem;
+    padding: 5.5rem 4rem;
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-rows: 23% 23% 23% 31%;
+    grid-template-rows: 20% 20% 20% auto;
+    grid-template-columns: 60% auto;
     grid-template-areas: 
         'a b'
         'c c'
         'd d'
         'e f'
     ;
-    justify-content: space-evenly;
     position: absolute;
+    row-gap: 2rem;
+    column-gap: 2rem;
 }
 
 .contact__firstName {
@@ -70,4 +72,84 @@
 .contact__form form button {
     grid-area: f;
     align-self: end;
+}
+
+.contact__form h5 {
+    color: var(--PURPLE-TEXT);
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.contact__form :where(input:not([type='checkbox']), select, textarea) {
+    width: 100%;
+    padding: var(--FORM-INPUT-PADDING);
+    border-radius: var(--FORM-INPUT-BORDER-RADIUS);
+    border: var(--FORM-INPUT-BORDER);
+    color: var(--FORM-INPUT-TEXT-COLOUR);
+    margin-top: 1rem;
+}
+
+.contact__form textarea {
+    border-radius: 15px;
+    resize: none;
+}
+
+.contact__form select {
+    appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='rgba(21, 20, 57, 0.8)' class='bi bi-chevron-down' viewBox='0 0 16 16'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/></svg>");
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 85%;
+    background-position-y: 50%;
+    margin-right: 2rem;
+}
+
+.contact__send-to-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact__send-to-me input {
+    border: var(--FORM-INPUT-BORDER);
+    margin-right: 1.2rem;
+    accent-color: var(--GREEN);
+    transform: scale(1.3);
+}
+
+.contact__send-to-me :where(input:hover, input:hover+label) {
+    pointer-events: none;
+}
+
+.contact__send-to-me label {
+    color: rgba(21, 20, 57, 0.5);
+    font-size: 1.6rem;
+}
+
+:where(.contact__phone, .contact__envelope, .contact__address) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+:where(.contact__phone, .contact__envelope, .contact__address) i {
+    font-size: 2rem;
+}
+
+.contact__text :where(p, h3) {
+    text-align: left;
+    padding: 0;
+}
+
+.contact__text p {
+    padding: 2.5rem 0;
+}
+
+.contact__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }

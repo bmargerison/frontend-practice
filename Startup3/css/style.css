@@ -20,6 +20,15 @@ img {
     height: auto;
 }
 
+form :where(input, select, textarea) {
+    font-family: inherit;
+    font-size: 1.8rem;
+}
+
+select {
+    background-color: white;
+}
+
 /* VARIABLES */
 :root {
     --SECTION-PADDING: 10rem 0;
@@ -28,7 +37,13 @@ img {
     --BRAND-DARK-PURPLE: #2f1893;
     --BRAND-DARK-PURPLE-TRANSPARENT: #2f189380; 
     --BACKGROUND-BLUE: #090764b4;
+    --PURPLE-TEXT:#1e0e62;
     --TITLE-MARGIN: 2.5rem;
+    --FORM-INPUT-PADDING: 1.3rem 1.3rem 1.3rem 2.5rem;
+    --FORM-INPUT-BORDER-RADIUS: 30px;
+    --FORM-INPUT-BORDER: 0.2rem solid rgba(31, 31, 31, 0.123);
+    --FORM-INPUT-TEXT-COLOUR: rgba(21, 20, 57, 0.8);
+    --GREEN: #25DAC5;
 }
 
 /* GENERAL STYLES */
@@ -152,8 +167,8 @@ button {
 }
 
 .btn--green:hover {
-    color: #25DAC5;
-    border: 0.2rem solid #25DAC5;
+    color: var(--GREEN);
+    border: 0.2rem solid  var(--GREEN);
     background: #fff;
 }
 

@@ -301,6 +301,18 @@
             <div class="contact__text">
                 <h3>Let's Keep in Touch</h3>
                 <p>We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+                <div class="contact__phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <p>+1 555 505 5050</p>
+                </div>
+                <div class="contact__envelope">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <p>info@designmodo.com</p>
+                </div>
+                <div class="contact__address">
+                    <i class="fa fa-building-o" aria-hidden="true"></i>
+                    <p>San Francisco, CA560 Bush St & 20th Ave, Apt5 San Francisco, 230909</p>
+                </div>
             </div>
             <div class="contact__form">
                 <form>
@@ -308,20 +320,23 @@
                         <label for="firstName"><h5>YOUR NAME</h5></label>
                         <input type="text" id="firstName" name="firstName" placeholder="First name">
                     </div>
-                    <select class="contact__budget" name="budget" id="budget">
-                        <option value="$500">$500</option>
-                    </select>
+                    <div class="contact__budget">
+                        <label for="budget"><h5>INPUT FIELD</h5></label>
+                        <select name="budget" id="budget">
+                            <option value="$500">$500</option>
+                        </select>
+                    </div>
                     <div class="contact__mail">
                         <label for="mail"><h5>INPUT FIELD</h5></label>
                         <input type="email" id="mail" name="mail" placeholder="name@mail.com">
                     </div>
                     <div class="contact__message">
                         <label for="message"><h5>YOUR MESSAGE</h5></label>
-                        <input type="textarea" id="message" name="message" placeholder="Message">
+                        <textarea name="message" rows="3" placeholder="Message"></textarea>
                     </div>
                     <div class="contact__send-to-me">
-                        <label for="sendToMe">Send me a copy</label>
                         <input type="checkbox" id="sendToMe" name="sendToMe">
+                        <label for="sendToMe">Send me a copy</label>
                     </div>
                     <button class="btn--green">Send</button>
                 </form>
