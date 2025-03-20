@@ -20,15 +20,6 @@ img {
     height: auto;
 }
 
-form :where(input, select, textarea) {
-    font-family: inherit;
-    font-size: 1.8rem;
-}
-
-select {
-    background-color: white;
-}
-
 /* VARIABLES */
 :root {
     --SECTION-PADDING: 10rem 0;
@@ -43,6 +34,7 @@ select {
     --FORM-INPUT-BORDER-RADIUS: 30px;
     --FORM-INPUT-BORDER: 0.2rem solid rgba(31, 31, 31, 0.123);
     --FORM-INPUT-TEXT-COLOUR: rgba(21, 20, 57, 0.8);
+    --BOX-BORDER: 0.2rem solid rgba(255, 255, 255, 0.3);
     --GREEN: #25DAC5;
 }
 
@@ -145,6 +137,27 @@ button {
     font-weight: 500;
 }
 
+form :where(input, select, textarea) {
+    font-family: inherit;
+    font-size: 1.8rem;
+}
+
+select {
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+}
+
+li {
+    color: white;
+    font-weight: 250;
+    font-size:1.6rem;
+    margin: 1rem 0 1rem 5rem;
+}
+
  /* STATES */
 .image--blend {
     background-blend-mode: multiply;
@@ -182,7 +195,33 @@ button {
     background: #fff;
 }
 
+.btn--pink {
+    background: none;
+    border: var(--BOX-BORDER);
+}
+
+.btn--pink:hover {
+    background-color: #E93A7D;
+    border-color: #E93A7D;
+}
+
+.btn--pink--selected {
+    background-color: #E93A7D;
+    border-color: #E93A7D;
+}
+
 .figcaption--offscreen {
     position: absolute;
     left: -100000px;
+}
+
+.li--unselected {
+    color: #cfcfcf;
+    font-weight: 150;
+}
+
+.li--selected::before {
+    content: url("../img/checkIcon.png");
+    position: absolute;
+    left: 2rem;
 }

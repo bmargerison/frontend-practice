@@ -1,0 +1,55 @@
+.pricing {
+    background-color: var(--BACKGROUND-PURPLE);
+    background-image: url('../img/pricing-background.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.pricing-wrapper {
+    margin: var(--SECTION-MARGIN);
+    padding: var(--SECTION-PADDING);
+}
+
+.pricing-text h3 {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.pricing-text p {
+    margin-bottom: 2.5rem;
+    margin: 0 20% 3rem 20%;
+    padding: 0;
+}
+
+.pricing-tiers > div h1::after {
+    content: url('../img/$.png');
+    position: absolute;
+    top: 4rem;
+}
+
+.pricing-tiers {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.pricing-tiers > div {
+    border: var(--BOX-BORDER);
+    border-radius: 1rem;
+    flex: 1 1 0;
+    padding: 3rem;
+    position: relative;
+}
+
+.pricing-tier-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.pricing-tier-button button {
+    width: 70%;
+}
+
