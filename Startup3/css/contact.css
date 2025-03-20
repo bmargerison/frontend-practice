@@ -9,6 +9,33 @@
     align-items: center;
 }
 
+:where(.contact__phone, 
+.contact__envelope, 
+.contact__address) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem 0;
+}
+
+:where(.contact__phone, 
+.contact__envelope, 
+.contact__address) i {
+    font-size: 2rem;
+}
+
+.contact__text :where(p, h3) {
+    text-align: left;
+    padding: 0;
+}
+
+.contact__text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .contact__wrapper {
     margin: var(--SECTION-MARGIN);
     display: flex;
@@ -81,7 +108,9 @@
     text-align: left;
 }
 
-.contact__form :where(input:not([type='checkbox']), select, textarea) {
+.contact__form :where(input:not([type='checkbox']), 
+select, 
+textarea) {
     width: 100%;
     padding: var(--FORM-INPUT-PADDING);
     border-radius: var(--FORM-INPUT-BORDER-RADIUS);
@@ -128,28 +157,22 @@
     font-size: 1.6rem;
 }
 
-:where(.contact__phone, .contact__envelope, .contact__address) {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
+@media screen and (max-width: 992px) {
+    .contact__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .contact__text :where(h3, p) {
+        text-align: center;
+    }
+
+    :where(.contact__phone, 
+    .contact__envelope, 
+    .contact__address) {
+        flex-direction: column;
+    }
 }
 
-:where(.contact__phone, .contact__envelope, .contact__address) i {
-    font-size: 2rem;
-}
-
-.contact__text :where(p, h3) {
-    text-align: left;
-    padding: 0;
-}
-
-.contact__text p {
-    padding: 2.5rem 0;
-}
-
-.contact__text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
