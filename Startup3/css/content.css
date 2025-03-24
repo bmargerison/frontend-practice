@@ -1,5 +1,3 @@
-@import url("style.css");
-
 .content {
     background-color: var(--BACKGROUND-BLUE);
     background-image: url('../img/content-background.png');

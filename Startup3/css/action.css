@@ -1,5 +1,3 @@
-@import url("style.css");
-
 .action {
     background-color: var(--BACKGROUND-BLUE);
     background-image: url('../img/action-background.png');

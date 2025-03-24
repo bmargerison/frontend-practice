@@ -1,5 +1,3 @@
-@import url("style.css");
-
 .features {
     display: grid;
     grid-template-columns: 2fr 5fr 1.5fr;

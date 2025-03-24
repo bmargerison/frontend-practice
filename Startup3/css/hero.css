@@ -1,5 +1,3 @@
-@import url("style.css");
-
 .hero {
     background-color: var(--BRAND-DARK-PURPLE-TRANSPARENT);
     min-height: 100vh;
