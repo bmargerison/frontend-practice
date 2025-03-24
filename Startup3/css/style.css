@@ -220,8 +220,11 @@ li {
     font-weight: 150;
 }
 
+.li--unselected::before {
+    content: url("../img/checkIcon.png") "\00a0\00a0";
+    opacity: 0;
+}
+
 .li--selected::before {
-    content: url("../img/checkIcon.png");
-    position: absolute;
-    left: 2rem;
+    content: url("../img/checkIcon.png") "\00a0\00a0";
 }
