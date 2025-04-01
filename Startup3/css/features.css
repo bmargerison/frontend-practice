@@ -14,6 +14,14 @@
     text-align: left;
 }
 
+.features__image {
+    overflow: hidden;
+}
+
+.features__image img {
+    float: right;
+}
+
 .features__content {
     margin: 0 3rem;
 }
@@ -43,3 +51,10 @@
     gap: 1rem;
     justify-content: center;
 }
+
+/* @media screen and (max-width: 1200px) {
+    .features__image {
+        overflow: hidden;
+    }
+}
+ */
