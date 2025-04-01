@@ -26,8 +26,9 @@
     gap: 3rem;
     padding: 3rem;
     text-align: left;
-    overflow: scroll;
+    overflow: auto;
 }
+
 
 .clients__image {
     grid-row: span 2;
