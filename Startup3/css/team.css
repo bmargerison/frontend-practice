@@ -9,13 +9,7 @@
     text-align: left;
 }
 
-.team p {
-    margin-bottom: var(--TITLE-MARGIN);
-    padding: 0;
-}
-
-.team h3 {
-    margin-bottom: var(--TITLE-MARGIN);
+.team__team-member :where(p, h4) {
     padding: 0;
 }
 

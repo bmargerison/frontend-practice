@@ -78,7 +78,6 @@
     font-size: 1.5rem;
     text-shadow: none;
     color: rgba(31, 31, 31, 0.4);
-    padding: 0;
 }
 
 @media screen and (max-width: 768px) {

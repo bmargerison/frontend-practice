@@ -6,11 +6,6 @@
     padding: 3rem 0;
 }
 
-.footer__brand h4 {
-    padding: 0;
-}
-
-
 .footer__brand ul {
     display: flex;
 }
@@ -39,6 +34,5 @@
 
 .footer__links p {
     font-size: 1.6rem;
-    padding: 0;
     text-align: end;
 }

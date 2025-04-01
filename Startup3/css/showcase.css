@@ -26,6 +26,11 @@
     flex: 1 1 48.5%;
 }
 
+.showcase__work h4,
+.showcase__work h5 {
+    padding: 0;
+}
+
 .showcase__work figure img {
     min-width: 40rem;
     margin-bottom: 2rem;

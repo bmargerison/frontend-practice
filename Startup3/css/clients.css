@@ -6,7 +6,6 @@
     margin: var(--SECTION-MARGIN);
     text-align: left;
     margin-bottom: var(--TITLE-MARGIN);
-    padding: 0;
 }
 
 .clients__feedback {
@@ -44,7 +43,6 @@
 .clients__text,
 .clients__name {
     text-align: left;
-    padding: 0;
 }
 
 @media screen and (max-width: 1200px) {
