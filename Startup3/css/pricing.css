@@ -27,6 +27,10 @@
     top: 4rem;
 }
 
+.pricing__tiers > div ul li {
+    margin: 1rem 0 1rem 5rem;
+}
+
 .pricing__tiers {
     display: flex;
     flex-direction: row;
