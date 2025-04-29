@@ -33,7 +33,6 @@ img {
     --HAMBURGER-BAR-WIDTH: 3.5rem;
     --HAMBURGER-BAR-GAP: 0.5rem;
     --HAMBURGER-HEIGHT: calc(var(--HAMBURGER-BAR-HEIGHT) * 3 + var(--HAMBURGER-BAR-GAP) * 2)
-
 }
 
 /* GENERAL STYLES */
@@ -671,4 +670,69 @@ p {
     .footer {
         padding: 4rem;
     }
+}
+
+/* FEEDBACK */
+.feedback__carousel {
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    gap: 2rem;
+}
+
+.feedback__card {
+    display: grid;
+    grid-template-areas:
+        "img name score star"
+        "img location score star"
+        "comment comment comment comment";
+    width: clamp(40rem, 30vw, 100rem);
+    flex-shrink: 0;
+    grid-template-columns: 17% auto 10% 10%;
+    grid-template-rows: 20% 20% auto;
+    align-items: center;
+    column-gap: 1rem;
+    border: var(--BORDER);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.feedback__image {
+    grid-area: img;
+}
+
+.feedback__name { 
+    grid-area: name;
+    font-size: 1.8rem;
+    align-self: end;
+}
+
+.feedback__location {
+    grid-area: location;
+    font-size: 1.4rem;
+    opacity: 0.7;
+    align-self: start;
+}
+
+.feedback__score {
+    grid-area: score;
+    display: flex;
+    justify-content: right;
+}
+
+.feedback__star {
+    grid-area: star;
+}
+
+.feedback__star svg {
+    color: #FEA250;
+    font-size: 1.5rem;
+    position: relative;
+    top: -0.2rem;
+}
+
+.feedback__comment {
+    grid-area: comment;
+    align-self: end;
+    margin-top: 0.5rem;
 }
